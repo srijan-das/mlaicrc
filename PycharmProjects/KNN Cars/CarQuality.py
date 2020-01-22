@@ -8,6 +8,8 @@ from sklearn import linear_model, preprocessing
 data = pd.read_csv("car.data", sep = ",")
 '''print(data.head())'''
 
+'''Converting strings to numerical data for computetions'''
+
 pre = preprocessing.LabelEncoder()
 buying = pre.fit_transform(data['buying'])
 maint = pre.fit_transform(data['maint'])
