@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 data = pd.read_csv("/home/srijan/PycharmProjects/mlaicrc/PycharmProjects/Udemy/Pandas Exercises/Salaries.csv")
-
+'''
 print(data.head())
 
 print(data.info())
@@ -16,6 +16,7 @@ print(data[data['EmployeeName']=='JOSEPH DRISCOLL']['JobTitle'])
 print(data[data['EmployeeName']=='JOSEPH DRISCOLL']['TotalPayBenefits'])
 
 print(data[data['TotalPayBenefits'] == data['TotalPayBenefits'].max()])
+*** above line can be substituted by print(sal.loc[sal['TotalPayBenefits'].idxmax()]) ***
 
 print(data[data['TotalPayBenefits'] == data['TotalPayBenefits'].min()])
 
@@ -36,3 +37,4 @@ print(sum(data['JobTitle'].apply(lambda x: isChief(x))))
 
 data['title_len'] = data['JobTitle'].apply(len)
 print(data[['title_len', 'TotalPayBenefits']].corr())
+'''

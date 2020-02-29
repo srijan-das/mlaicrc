@@ -50,3 +50,7 @@ for i in range(5) :
         currsum = currsum + matrix[j,i]
     sum_col.append(currsum)
 print(sum_col)
+
+exam = np.random.randint(1, 50, 10)
+print(exam)
+print(exam[exam > 30])
